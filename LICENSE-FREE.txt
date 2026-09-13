@@ -1,0 +1,9 @@
+SpiceGrinder Free Edition
+Copyright (c) Obsvra / Kevin M. Krom
+
+This Free distribution is provided for evaluation, education, and non-production
+use under terms you publish with the download. It deliberately omits Pro
+components (Import, FlatFile, Database, Perturb, custom extension loading, etc.).
+
+There is no supported mechanism to unlock Pro features inside this artifact.
+Commercial use of Pro capabilities requires a separate Pro build and license.

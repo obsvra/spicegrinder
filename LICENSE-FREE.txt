@@ -1,9 +1,15 @@
 SpiceGrinder Free Edition
 Copyright (c) Obsvra / Kevin M. Krom
 
-This Free distribution is provided for evaluation, education, and non-production
-use under terms you publish with the download. It deliberately omits Pro
-components (Import, FlatFile, Database, Perturb, custom extension loading, etc.).
+This Free distribution may be used at no charge for any lawful purpose, including
+commercial and production use, under the SpiceGrinder End-User License Agreement
+(docs/EULA.pdf). It deliberately omits Pro components (Import, FlatFile, Database,
+Perturb, custom extension loading, etc.).
+
+Data that you generate with the Software belongs to you, and this license places no
+restriction on its use, except that reference data files included with the Software
+remain subject to the licenses listed in the Third-Party Notices
+(docs/THIRD-PARTY-NOTICES.md).
 
 There is no supported mechanism to unlock Pro features inside this artifact.
-Commercial use of Pro capabilities requires a separate Pro build and license.
+Use of Pro capabilities requires a separate Pro build and license.

@@ -1,0 +1,26 @@
+{
+  "exporter_version": "1.1.0",
+  "files": [
+    {
+      "path": "LICENSE-FREE.txt",
+      "sha256": "a1d1e09f73c11b1b6e7c2adac4654fe72b08432203dcadb79d8e987dac084945"
+    },
+    {
+      "path": "docs/Verifying-Release-Signatures.md",
+      "sha256": "0a3c819fe6757fe81f5303c1fa981c3e6dadd9463b41ee937bb6d03cca7c3f33"
+    },
+    {
+      "path": "docs/spicegrinder-codesign.pem",
+      "sha256": "2098ce9c90e899143f767439c4133d7393bc7b505ecd61e631a1efbfadfb114f"
+    }
+  ],
+  "owned": [
+    {
+      "path": "README.md",
+      "sha256": "f892de93fbb60ee55bd7e2ae92bcbbd56a230e2088ff729dbbea2359351fb531"
+    }
+  ],
+  "schema": 1,
+  "snapshot_id": "17b3be634cbd6a06",
+  "target": "free-repo"
+}

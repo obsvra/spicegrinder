@@ -15,16 +15,34 @@ Full documentation, pricing, and benchmarks are at **https://obsvra.com**.
 
 Get the latest build from [Releases](https://github.com/obsvra/spicegrinder/releases/latest).
 
-| Build | For |
-| --- | --- |
-| `-windows.zip` | Windows x64, self-contained |
-| `-mac-arm64.zip` | macOS Apple Silicon, self-contained |
-| `-mac-x64.zip` | macOS Intel, self-contained |
-| `-linux.zip` | Linux x64 / ARM64, self-contained |
-| `-jre.zip` | Any OS, if you manage your own Java 25+ runtime |
+You need one file. Each has its own Java runtime, so there is no Java to install.
 
-The self-contained builds bundle the runtime, so there is nothing else to
-install. Pick the JRE-only build if your organization manages its own Java.
+| Platform | Desktop installer (the whole product) | CLI zip (no desktop app) |
+| --- | --- | --- |
+| Windows x64 | `-Desktop-windows-setup.exe` (no admin needed) or `-Desktop-windows.msi` (all users) | `-windows.zip` |
+| macOS Apple Silicon | `-Desktop-mac-arm64.dmg` | `-mac-arm64.zip` |
+| macOS Intel | `-Desktop-mac-x64.dmg` | `-mac-x64.zip` |
+| Linux x64 | `-Desktop-linux.AppImage` or `-Desktop-linux.deb` | `-linux.zip` |
+| Linux ARM64 | `-Desktop-linux-arm64.AppImage` or `-Desktop-linux-arm64.deb` | `-linux-arm64.zip` |
+
+**Desktop installer:** the whole product. It has the desktop app (the model editor), all
+the command-line tools, including `grind` and `experiment`, the MCP server, docs, the User
+Manual, sample models and agent skills. Most people want this one. The Windows setup `.exe`
+and Linux `.deb` add the tools to your PATH; the `.dmg`, `.msi` and `.AppImage` don't yet,
+and the User Manual shows how. On Windows, run the format tool as `format-model`, because
+`format` alone runs the Windows disk format command.
+
+**CLI zip:** the same tools, MCP server, docs, samples and skills, with no desktop app.
+Choose it for servers, CI and anywhere you don't want the desktop app. You set up your
+PATH yourself; the User Manual shows how.
+
+### Other downloads
+
+- `-jre.zip`: any OS, only if you manage your own Java 25+ runtime. It has `grind`,
+  `experiment`, `analyze`, `validate`, `compare` and `format`, plus docs and samples, but
+  no `list`, no MCP server and no skills. Most people should pick the desktop installer or
+  the CLI zip for their platform.
+- `SpiceGrinder-Skills-1.0.0.zip`: the agent skills on their own, with no engine.
 
 ### Verify your download
 
@@ -36,13 +54,14 @@ shasum -a 256 -c SHA256SUMS.txt --ignore-missing
 
 ## What Free includes
 
-The full core engine — every distribution, every core filter, deterministic
-output, the CLI tools, and the desktop GUI — for models using numeric data, up to
-20 nodes. Generation is unlimited and does not expire.
+The full core engine, with every distribution, every core filter and deterministic
+output, for models using numeric data, up to 20 nodes. Generation is unlimited and does
+not expire. The desktop installer has the desktop app, the command-line tools, the MCP
+server, docs, samples and skills; the CLI zip has all of that except the desktop app.
 
-Pro adds complex data types, the business-object library (phone, SSN, credit
-card, address, email), external data sources, custom components, and removes the
-node limit. See [pricing](https://obsvra.com/get-spicegrinder).
+Pro adds complex data types, the business-object library (phone, SSN, credit card,
+address, email), external data sources, custom components, and removes the node limit.
+See [pricing](https://obsvra.com/get-spicegrinder).
 
 ## Source
 
